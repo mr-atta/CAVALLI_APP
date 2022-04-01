@@ -1,0 +1,20 @@
+:root {
+    --CA1BackGround: #dfd8c8;
+    --CA2Wright: #52575d;
+    --CAshadow1: #52575d;
+    
+    --white: #ffffff;
+    --LGray:#e0e0e0;
+    --Gray:#aaaaaa;
+    --DGray:#353333;
+    --Black: #000000 ;
+}
+:root {
+    /* ↓ Now (almost) all elements display a sans-serif font */
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+* {
+    /* ↓ Now literally all elements display a sans-serif font */
+    font-family: sans-serif;
+  }
