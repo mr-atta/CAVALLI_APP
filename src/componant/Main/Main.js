@@ -1,6 +1,11 @@
 import React from "react";
+// CSS
+import "../ResetCSS.css"
+import "../CommonCSS.css";
+import "./Main.css";
+// Redux
 import { useDispatch, useSelector } from "react-redux";
-import { increment } from "../../Redux/Actions/index.js";
+import { increment , decrement } from "../../Redux/Actions/index.js";
 
 function Main(props) {
   
@@ -12,6 +17,8 @@ function Main(props) {
       <h3>INCREMENT </h3> 
       <div>{cartCounter}</div>
       <button onClick={() => dispatch(increment())}> + </button>
+      <button onClick={() => dispatch(decrement())}> - </button>
+
     </div>
   );
 }

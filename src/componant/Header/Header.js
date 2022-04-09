@@ -11,7 +11,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 class Header extends React.Component {
   render() {
     return (
-      <div className="Header">
+      <div id="Header">
         <HeaderTop />
         <div id="spacer"></div>
         <HeaderBtu />

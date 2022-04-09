@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from "../img/86176785_135765674578256_5399028823150821376_o.jpg";
+import { Link } from "react-router-dom";
 
+// bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
 // fontawesome imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -18,7 +19,7 @@ import { faA, faC, faV, faL, faI } from "@fortawesome/free-solid-svg-icons";
 // regular fortawesome
 import { faChartBar } from "@fortawesome/free-regular-svg-icons";
 // Redux
-import { useSelector , useDispatch} from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 
 function HeaderTop(props) {
   const cartCounter = useSelector((state) => state.cartCounter);
@@ -35,10 +36,13 @@ function HeaderTop(props) {
         <button className="BtHtop">
           <FontAwesomeIcon icon={faIdCard} className="Fa FaHtop" /> LogIn
         </button>
-        <button className="BtHtop">
-          <FontAwesomeIcon icon={faCartArrowDown} className="Fa FaHtop" /> (
-          {cartCounter})
-        </button>
+        
+        <Link to="/cart">
+          <button className="BtHtop">
+            <FontAwesomeIcon icon={faCartArrowDown} className="Fa FaHtop" /> (
+            {cartCounter})
+          </button>
+        </Link>
       </div>
 
       {/* <FontAwesomeIcon icon={faCheck} />

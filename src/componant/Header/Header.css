@@ -1,5 +1,5 @@
 /*  Header  */
-.Header {
+#Header {
   background-color: var(--CA1BackGround);
 
   width: 100%;
@@ -70,21 +70,36 @@
   padding: 0.5rem 1rem;
 }
 
-/* Header Responsive less than 500 px */
-@media only screen and (max-width: 576px) {
-    #SubLogo{
-        display: none;
-    }
-    #MainLogo{
-        letter-spacing: 0.6px;
-        font-size: 2rem;
-    }
-    .BtHtop{
-        font-size: small;
-    }
-    .BtHbtu{
-        font-size: small;
-    }
+/* Header Responsive less than 614 px */
+@media only screen and (max-width: 614px) {
+  #SubLogo {
+    display: none;
   }
+  #MainLogo {
+    letter-spacing: 0.6px;
+    font-size: 2rem;
+  }
+  .BtHtop {
+    font-size: small;
+  }
+  .BtHbtu {
+    font-size: small;
+  }
+}
 
-
+/* Header Responsive less than 614 px */
+@media only screen and (max-width: 614px) {
+  #SubLogo {
+    display: none;
+  }
+  #MainLogo {
+    letter-spacing: 0.6px;
+    font-size: 2rem;
+  }
+  .BtHtop {
+    font-size: small;
+  }
+  .BtHbtu {
+    font-size: small;
+  }
+}
