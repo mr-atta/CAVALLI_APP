@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 // get our fontawesome imports
@@ -19,19 +20,30 @@ class HeaderBtu extends React.Component {
   render() {
     return (
       <div className="HeaderB Contaner">
-        <button className="BtHbtu"  > 
-          <FontAwesomeIcon icon={faHome} className="Fa FaHbtu" /> Home
-        </button>
-        <button className="BtHbtu">
-          <FontAwesomeIcon icon={faStore} className="Fa FaHbtu" /> Store
-        </button>
-        <button className="BtHbtu">
-          <FontAwesomeIcon icon={faGripVertical} className="Fa FaHbtu" />{" "}
-          Services
-        </button>
-        <button className="BtHbtu">
-          <FontAwesomeIcon icon={faUsers} className="Fa FaHbtu" /> About Us
-        </button>
+        <Link to="/">
+          <button className="BtHbtu">
+            {" "}
+            <FontAwesomeIcon icon={faHome} className="Fa FaHbtu" /> Home{" "}
+          </button>
+        </Link>
+        <Link to="/store">
+          <button className="BtHbtu">
+            <FontAwesomeIcon icon={faStore} className="Fa FaHbtu" /> Store
+          </button>
+        </Link>
+
+        <Link to="/services">
+          <button className="BtHbtu">
+            <FontAwesomeIcon icon={faGripVertical} className="Fa FaHbtu" />{" "}
+            Services
+          </button>
+        </Link>
+
+        <Link to="/about">
+          <button className="BtHbtu">
+            <FontAwesomeIcon icon={faUsers} className="Fa FaHbtu" /> About
+          </button>
+        </Link>
       </div>
     );
   }

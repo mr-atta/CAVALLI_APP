@@ -3,9 +3,9 @@ const cartCounter = (state = 0, action) => {
     case "INCREMENT":
       return state + 1;
     case "DECREMENT":
-      return state - 1;
+      return state > 0 ? state - 1 : state;
     default:
-        return state;
+      return state;
   }
 };
 
