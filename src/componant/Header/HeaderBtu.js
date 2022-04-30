@@ -32,12 +32,12 @@ class HeaderBtu extends React.Component {
           </button>
         </Link>
 
-        <Link to="/services">
+        {/* <Link to="/services">
           <button className="BtHbtu">
             <FontAwesomeIcon icon={faGripVertical} className="Fa FaHbtu" />{" "}
             Services
           </button>
-        </Link>
+        </Link> */}
 
         <Link to="/about">
           <button className="BtHbtu">
